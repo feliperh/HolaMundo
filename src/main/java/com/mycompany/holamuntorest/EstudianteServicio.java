@@ -72,7 +72,6 @@ public class EstudianteServicio {
 
         facade = new StudentFacade();
         Student studentJPA = new Student();
-        studentJPA.setId(student.getId());
         studentJPA.setName(student.getName());
         studentJPA.setAge(student.getAge());
         facade.save(studentJPA);
