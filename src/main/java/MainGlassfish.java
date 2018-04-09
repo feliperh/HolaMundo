@@ -1,4 +1,3 @@
-import edu.sergioArboleda.dao.CreateDataBase;
 import java.io.File;
 import org.glassfish.embeddable.CommandResult;
 import org.glassfish.embeddable.CommandRunner;
@@ -34,8 +33,7 @@ public class MainGlassfish {
 	Deployer deployer = glassfish.getDeployer();
 
               
-        //Invocando el Script de Creacion de la base de datos.
-         CreateDataBase.run();
+       
 
 	// Create a scattered web application.
 	ScatteredArchive archive = new ScatteredArchive("holaMundo",
